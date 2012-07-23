@@ -13,6 +13,6 @@
     document.cookie = name+'='+value+expires+'; path=/';
   }
 
-  createCookie('fstrz', true, 1);
+  createCookie('fstrz', '', -1);
   window.location.reload(true);
 }(this, document));
