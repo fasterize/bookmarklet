@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Fasterize bookmarklet</title>
+</head>
+<body style=font-size:170%;margin-top:3em>
+
+Drag links to your bookmark bar and uses them on any Fasterized website to activate/deactivate Fasterize.
+
+<h3>Fasterize <span style=color:green>ON</span></h3>
+<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+864E5);a='; expires='+a.toGMTString();c.cookie='fstrz=true'+a+'; path=/';b.location.reload(!0)})(this,document);" title="test">FZ ON</a> <= drag this
+
+<h3>Fasterize <span style=color:red>OFF</span></h3>
+<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+-864E5);a='; expires='+a.toGMTString();c.cookie='fstrz='+a+'; path=/';b.location.reload(!0)})(this,document);">FZ OFF</a>  <= drag this
+
+</body>
+</html>
