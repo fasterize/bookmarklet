@@ -2,15 +2,23 @@
 <head>
   <title>Fasterize bookmarklet</title>
 </head>
-<body style=font-size:170%;margin-top:3em>
+<body style=font-size:130%;margin-top:3em>
 
-Drag links to your bookmark bar and uses them on any Fasterized website to activate/deactivate Fasterize.
+<h1>Fasterize bookmarklets</h1>
+
+<p>Drag links to your bookmark bar and uses them on your <b>Fasterized</b> website to activate/deactivate Fasterize.</p>
+
+<p>After clicking the on/off bookmarklets, you should either:</p>
+<ul>
+  <li>do a full refresh of the page, CMD+SHIFT+F5 on most systems</li>
+  <li>empty your browser's cache</li>
+</ul>
 
 <h3>Fasterize <span style=color:green>on</span></h3>
-<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+-864E5);a='; expires='+a.toGMTString();c.cookie='fstrz='+a+'; path=/';b.location.reload(!0)})(this,document);" title="test">Fz on</a> <= drag this
+<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+-864E5);a='; expires='+a.toGMTString();c.cookie='fstrz='+a+'; path=/';b.location.reload(!0)})(this,document);" title="test">Fz on</a> < drag this
 
 <h3>Fasterize <span style=color:red>off</span></h3>
-<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+432E5);a='; expires='+a.toGMTString();c.cookie='fstrz=false'+a+'; path=/';b.location.reload(!0)})(this,document);">Fz off</a>  <= drag this
+<a href="javascript:(function(b,c){var a;a=new Date;a.setTime(a.getTime()+432E5);a='; expires='+a.toGMTString();c.cookie='fstrz=false'+a+'; path=/';b.location.reload(!0)})(this,document);">Fz off</a>  < drag this
 
 </body>
 </html>
